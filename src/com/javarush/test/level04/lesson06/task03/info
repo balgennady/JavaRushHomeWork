@@ -1,0 +1,24 @@
+        int n1 = 0;
+        int n2 = 0;
+        int n3 = 0;
+
+        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
+        String sA = reader.readLine();
+        String sB = reader.readLine();
+        String sC = reader.readLine();
+        int a = Integer.parseInt(sA);
+        int b = Integer.parseInt(sB);
+        int c = Integer.parseInt(sC);
+
+        if      (a > b && a > c ) {if (b > c) {n1 = a; n2 = b; n3 = c;} else {n1 = a; n2 = b; n3 = c;} }
+        else if (b > a && b > c ) {if (a > c) {n1 = b; n2 = a; n3 = c;} else {n1 = b; n2 = c; n3 = a;} }
+        else if (c > a && c > b ) {if (a > b) {n1 = c; n2 = a; n3 = b;} else {n1 = c; n2 = b; n3 = a;} }
+
+
+        System.out.println(n1 + " " + n2 +" "+ n3);
+
+        /*
+         a < b && a < c    - a минимальное из a, b, c
+        (a < b || a < c)   - a или меньше b, или меньше c
+        (a < b && a < c)   - a - это минимум
+        */
