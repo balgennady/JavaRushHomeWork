@@ -7,7 +7,6 @@ package com.javarush.test.level15.lesson04.task01;
 Это double
 Это Integer
 Это double
-
 2 Удалите реализации всех лишних методов
 */
 
