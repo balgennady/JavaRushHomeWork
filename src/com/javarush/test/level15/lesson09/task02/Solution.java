@@ -14,8 +14,6 @@ public class Solution {
     public static int A;
     public static int B;
 
-    public static final int MIN = min(A, B);
-
     static {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         try {
@@ -27,6 +25,8 @@ public class Solution {
             System.out.println("Возникла ошибка " + e);
         }
     }
+
+    public static final int MIN = min(A, B);
 
     public static void main(String[] args) {
         System.out.println(MIN);
