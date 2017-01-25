@@ -21,6 +21,7 @@ public class Solution {
 
     static {
         //throw an exception here - выбросьте эксепшн тут
+        if (0==A) throw new RuntimeException();
     }
 
     public static int B = 5;
