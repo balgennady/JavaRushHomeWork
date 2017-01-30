@@ -20,6 +20,11 @@ public class Solution {
         public void doAction() {
             System.out.println("flying");
         }
+
+        @Override
+        public void doAction2() {
+            System.out.println("moving");
+        }
     }
 
     public static class Util {
@@ -28,7 +33,7 @@ public class Solution {
         }
 
         static void move(Movable animal) {
-            animal.doAction();
+            animal.doAction2();
         }
     }
 
@@ -37,6 +42,6 @@ public class Solution {
     }
 
     public static interface Movable {
-        void doAction();
+        void doAction2();
     }
 }
